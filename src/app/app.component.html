@@ -1,4 +1,10 @@
-<div>Testing 123</div>
+<div class="header">
+    <div style="position:relative; height: 100%; width: 100%;">
+        <button mat-button class="nav-button" (click)="route('home')">Home</button>
+        <button mat-button class="nav-button" (click)="route('experience')">Experience</button>
+        <button mat-button class="nav-button" (click)="route('about-me')">About Me</button>
+    </div>
+</div>
 
 <!-- Structure -->
 <!-- home page - big title -->
@@ -15,3 +21,7 @@
 <!-- popups -->
 <!-- color changes -->
 <!-- scrolling animations -->
+
+<div class="app-body">
+    <router-outlet></router-outlet>
+</div>
