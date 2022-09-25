@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/bd79ac44-a17f-4147-8d30-3da4e8f0b413/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/api-textterra"
+}
