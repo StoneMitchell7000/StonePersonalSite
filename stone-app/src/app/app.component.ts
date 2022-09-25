@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'stone-personal-site';
+  highlight: string = '';
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -20,5 +21,6 @@ export class AppComponent implements OnInit {
 
   route(path: string): void {
     this.router.navigate([path]);
+    this.highlight = path;
   }
 }

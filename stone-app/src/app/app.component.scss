@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     height: 50px;
-    background-color: #444444;
+    background-color: #575757;
     border-bottom: 8px solid #7DFFAF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 100;
@@ -46,4 +46,9 @@
     margin-left: 10px;
     font-weight: bold;
     font-size: large;
+    transition: .25s;
+}
+
+.selected {
+    background-color: #7dffaf23;
 }
