@@ -1,0 +1,50 @@
+.scroll-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 1em;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.about-box {
+    display: grid;
+    grid-template-rows: 500px;
+
+}
+
+.left {
+    grid-template-columns: min-content 1fr;
+}
+
+.right {
+    grid-template-columns: 1fr min-content;
+}
+
+.img-container {
+    padding: 60px;
+}
+
+.text-container {
+    padding: 60px;
+}
+
+.img-container img {
+    height: 380px;
+    border-radius: 40px;
+}
