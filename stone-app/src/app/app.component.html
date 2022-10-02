@@ -2,10 +2,10 @@
     <div style="position:relative; height: 100%; width: 100%;">
         <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == ''}"
             (click)="route('')">Home</button>
-        <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == 'experience'}"
-            (click)="route('experience')">Experience</button>
         <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == 'about-me'}"
             (click)="route('about-me')">About Me</button>
+        <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == 'experience'}"
+            (click)="route('experience')">Experience</button>
         <img class="header-icon" src="../assets/wave.png">
         <img class="header-text" src="../assets/sm_underscore.png">
     </div>
