@@ -1,8 +1,8 @@
 .home-background {
     height: 100%;
     width: 100%;
-    background: rgb(87,87,87);
-    background: radial-gradient(circle, rgba(87,87,87,1) 1%, rgba(68,68,68,1) 44%);
+    background: rgb(87, 87, 87);
+    background: radial-gradient(circle, rgba(87, 87, 87, 1) 1%, rgba(68, 68, 68, 1) 44%);
 }
 
 .home-grid {
@@ -93,6 +93,11 @@
     filter: drop-shadow(5px 5px 5px #222);
     text-align: center;
     margin-top: 20px;
+}
+
+div,
+span {
+    color: white;
 }
 
 @keyframes floating {

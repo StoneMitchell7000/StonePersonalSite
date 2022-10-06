@@ -1,10 +1,10 @@
 <div class="header">
     <div style="position:relative; height: 100%; width: 100%;">
-        <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == ''}"
-            (click)="route('')">Home</button>
-        <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == 'experience'}"
+        <button mat-button class="nav-button" routerLinkActive="selected" [routerLink]="['./']"
+            [routerLinkActiveOptions]="{exact: true}" (click)="route('')">Home</button>
+        <button mat-button routerLinkActive="selected" routerLink="experience" class="nav-button"
             (click)="route('experience')">Experience</button>
-        <button mat-button class="nav-button" [ngClass]="{'selected' : highlight == 'about-me'}"
+        <button mat-button routerLinkActive="selected" routerLink="about-me" class="nav-button"
             (click)="route('about-me')">About Me</button>
         <img class="header-icon" src="../assets/wave.png">
         <img class="header-text" src="../assets/sm_underscore.png">

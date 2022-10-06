@@ -62,7 +62,20 @@
     padding: 30px 0 15px 0;
 }
 
+.bottom-link-box {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 30px 0;
+}
+
 .link-box span {
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.bottom-link-box span {
     padding: 0 6px;
     display: inline-block;
     font-size: 18px;
@@ -86,4 +99,19 @@ a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.resume-container {
+    width: 100%;
+}
+
+.resume {
+    margin: 0 auto;
+    display: block;
+    max-width: 85%;
+}
+
+div,
+span {
+    color: white;
 }

@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +9,15 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'stone-personal-site';
-  highlight: string = '';
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    private router: Router) { }
+    public router: Router) { }
 
   ngOnInit(): void {
-    this.route('');
   }
 
   route(path: string): void {
     this.router.navigate([path]);
-    this.highlight = path;
   }
 }

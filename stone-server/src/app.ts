@@ -12,13 +12,13 @@ const server = require('http').createServer(app);
 app.use(express.json());
 if (appConfig.isDevelopment) { app.use(cors.default(appConfig.cors)); }
 
-app.use(express.static('/'));
-app.get('/', (req, res) => { res.redirect('index.html'); });
+app.use(express.static('wwwroot/'));
+app.get('/', function (req, res) {
+    res.redirect('index.html');
+});
 
-// this will allow deep links to work.
-app.all('/*', (req, res, next) => {
-    // Just send the index.html for other files to support HTML5Mode
-    res.sendFile('index.html', { root: '/' });
+app.all('/*', function (req, res, next) {
+    res.sendFile('index.html', { root: 'wwwroot/' });
 });
 
 server.listen(appConfig.port, () => {
