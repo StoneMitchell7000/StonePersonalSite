@@ -3,7 +3,7 @@ export const log4jsConfig =
     appenders: {
         file: {
             type: 'file',
-            filename: 'logs/textterra.log',
+            filename: 'logs/stonemitchell.log',
             maxLogSize: 104800,
             backups: 3
         },
