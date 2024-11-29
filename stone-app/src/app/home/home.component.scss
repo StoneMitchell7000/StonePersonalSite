@@ -1,0 +1,129 @@
+.home-background {
+    height: 100%;
+    width: 100%;
+    background: rgb(87, 87, 87);
+    background: radial-gradient(circle, rgba(87, 87, 87, 1) 1%, rgba(68, 68, 68, 1) 44%);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 3fr 1.25fr;
+    grid-template-rows: 44% 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.home-title {
+    height: 11vw;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.top-title-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.bottom-title-text {
+    margin-top: 10px;
+}
+
+.top-title {
+    grid-area: 1 / 2 / span 1 / span 1;
+    position: relative;
+}
+
+.bottom-title {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.left-ornament-container {
+    grid-area: 1 / 1 / span 2 / span 1;
+    position: relative;
+}
+
+.right-ornament-container {
+    grid-area: 1 / 3 / span 2 / span 1;
+    position: relative;
+}
+
+.right-ornament {
+    position: absolute;
+    background-color: #575757;
+    top: 10%;
+    bottom: 55%;
+    left: 25%;
+    right: 25%;
+    border-radius: 40px;
+    box-shadow: -8px -8px #7DFFAF;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.left-ornament {
+    position: absolute;
+    background-color: #575757;
+    bottom: 10%;
+    top: 55%;
+    left: 25%;
+    right: 25%;
+    border-radius: 40px;
+    box-shadow: 8px 8px #7DFFAF;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 22px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    text-align: center;
+    margin-top: 20px;
+}
+
+div,
+span {
+    color: white;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+@keyframes inverted-floating {
+    0% {
+        transform: translate(0, -0px);
+    }
+
+    50% {
+        transform: translate(0, -15px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}

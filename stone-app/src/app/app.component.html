@@ -1,0 +1,30 @@
+<div class="header">
+    <div style="position:relative; height: 100%; width: 100%;">
+        <button mat-button class="nav-button" routerLinkActive="selected" [routerLink]="['./']"
+            [routerLinkActiveOptions]="{exact: true}" (click)="route('')">Home</button>
+        <button mat-button routerLinkActive="selected" routerLink="experience" class="nav-button"
+            (click)="route('experience')">Experience</button>
+        <button mat-button routerLinkActive="selected" routerLink="about-me" class="nav-button"
+            (click)="route('about-me')">About Me</button>
+        <img class="header-icon" src="../assets/wave.png">
+        <img class="header-text" src="../assets/sm_underscore.png">
+    </div>
+</div>
+
+<!-- Structure -->
+<!-- home page - big title -->
+<!-- personal info - about myself and interests -->
+<!-- experience - resume content - link to tt, bdd-->
+<!-- non-critical - links to code projects on github -->
+
+<!-- ----include---- -->
+<!-- basic left-right overflow scrolling, make sure header doesn't scroll/has a min width-->
+<!-- resume download -->
+<!-- photos(linkedIn photo specifically) -->
+<!-- animations -->
+<!-- gOofy flare -->
+<!-- popups(maybe) -->
+
+<div class="app-body">
+    <router-outlet></router-outlet>
+</div>
